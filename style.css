@@ -16,6 +16,7 @@ header {
     border-bottom: 1px solid seashell;
     position: fixed;
     width: 100%;
+    background-color: black;
 }
 
 header img {
@@ -34,4 +35,37 @@ header ul li {
     margin-left: 20px;
     display: inline-block;
     text-decoration: underline;
+}
+
+main::before {
+    display: block;
+    height: 70px;
+    content: ' ';
+}
+
+#banner {
+    height: 700px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    margin: 0 auto 70px;
+}
+
+#banner-text {
+    height: auto;
+    font-weight: bold;
+    background-color: black;
+}
+
+#banner::before, #banner::after {
+    display: block;
+    content: ' ';
+    height: 303px;
+}
+
+#banner-text > * {
+    padding: 10px 0;
+}
+
+#banner-text h2 {
+    font-size: 32px;
 }

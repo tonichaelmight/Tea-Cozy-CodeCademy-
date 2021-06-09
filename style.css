@@ -37,6 +37,23 @@ header ul li {
     text-decoration: underline;
 }
 
+h2, h3, h4, h5 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
 main::before {
     display: block;
     height: 70px;
@@ -51,8 +68,6 @@ main::before {
 }
 
 #banner-text {
-    height: auto;
-    font-weight: bold;
     background-color: black;
 }
 
@@ -62,10 +77,59 @@ main::before {
     height: 303px;
 }
 
-#banner-text > * {
-    padding: 10px 0;
+#totm {
+    width: 1000px;
+    margin: 70px auto;
 }
 
-#banner-text h2 {
-    font-size: 32px;
+#totm .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px 25px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#totm .flex-container .flex-item img {
+    height: 200px;
+    width: 300px;
+}
+
+#locations {
+    margin: 70px auto 0;
+    padding-top: 70px;
+    height: 500px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+}
+
+#locations .flex-container {
+    display: flex;
+    gap: 0 40px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#locations .flex-container .flex-item {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+}
+
+#locations .flex-container .flex-item h3,
+#locations .flex-container .flex-item p {
+    padding: 25px 0;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 40px 20px 25px;
+    text-align: left;
+}
+
+footer h5 {
+    padding: 0;
 }
